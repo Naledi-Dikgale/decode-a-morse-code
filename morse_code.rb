@@ -44,4 +44,23 @@ class MorseCodeDecoder
     decoded_word
   end
 
+  def decode(message)
+    morse_words = message.split('   ')
+    decoded_message = ''
+
+    morse_words.each do |morse_word|
+      decoded_word = decode_word(morse_word)
+      decoded_message += "#{decoded_word} " unless decoded_word.empty?
+    end
+
+    decoded_message.strip
+  end
+end
+
+message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+
+decoder = MorseCodeDecoder.new
+decoded_message = decoder.decode(message)
+
+puts decoded_message
   
