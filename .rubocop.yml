@@ -1,0 +1,58 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "Guardfile"
+    - "Rakefile"
+    - "node_modules/**/*"
+    
+  DisplayCopNames: true
+
+Layout/LineLength:
+  Max: 180
+Metrics/MethodLength:
+  Max: 30
+Metrics/AbcSize:
+  Max: 50
+Metrics/ClassLength:
+  Max: 160
+Metrics/BlockLength:
+  IgnoredMethods: ['describe']
+  Max: 30
+Metrics/CyclomaticComplexity:
+  Max: 20
+Metrics/PerceivedComplexity:
+  Max: 12
+
+
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/EachForSimpleLoop:
+  Enabled: false
+Style/AndOr:
+  Enabled: false
+Style/DefWithParentheses:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Layout/HashAlignment:
+  EnforcedColonStyle: key
+Layout/EndOfLine:
+   Enabled: false
+Layout/ExtraSpacing:
+  AllowForAlignment: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+Lint/RaiseException:
+  Enabled: false
+Lint/StructNewOverride:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
