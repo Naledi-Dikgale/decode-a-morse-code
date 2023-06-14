@@ -77,7 +77,7 @@ Install this project with:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project execute the following command:
 
 - [N/A]
 
