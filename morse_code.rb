@@ -63,4 +63,3 @@ decoder = MorseCodeDecoder.new
 decoded_message = decoder.decode(message)
 
 puts decoded_message
-  
