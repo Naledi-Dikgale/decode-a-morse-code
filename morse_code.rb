@@ -63,3 +63,5 @@ decoder = MorseCodeDecoder.new
 decoded_message = decoder.decode(message)
 
 puts decoded_message
+
+# Path: morse_code_spec.rb
